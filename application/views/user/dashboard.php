@@ -1,6 +1,6 @@
 <main>
     <div class="container-fluid">
-        <h1 class="mt-4">Dashboard</h1>
+        <h1 class="mt-4">Sistem Informasi Pelayanan Perbenihan Benih Unggul</h1>
         
         <div class="card mb-4">
             <div class="card-header">
