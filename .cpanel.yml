@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/dispert2/public_html/perbenihan.dispertan.com/
+    - /bin/cp -R * $DEPLOYPATH
