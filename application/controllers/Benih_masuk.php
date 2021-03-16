@@ -1,7 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Benih_masuk extends CI_Controller {
+class Benih_masuk extends MY_Controller {
+
+	function __construct(){
+		parent::__construct();		
+		$this->cekLogin();
+	}
 
 	public function list()
 	{

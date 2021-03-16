@@ -47,7 +47,7 @@
                                 <td><?php echo $benih_item['nama_kelas'] ?></td>
                                 <td><?php echo $benih_item['stok_benih'] ?></td>
                                 <td><?php echo $benih_item['satuan'] ?></td>
-                                <td>Rp. <?php echo $benih_item['harga'] ?></td>
+                                <td>Rp. <?php echo number_format($benih_item['harga'], 0, ",", ".") ?></td>
                                 <td><?php echo $benih_item['deskripsi'] ?></td>
                             </tr>
                         <?php $no++ ?>

@@ -1,7 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Varietas extends CI_Controller {
+class Varietas extends MY_Controller {
+
+	function __construct(){
+		parent::__construct();		
+		$this->cekLogin();
+	}
 
 	public function list()
 	{
