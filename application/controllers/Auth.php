@@ -87,7 +87,7 @@ class Auth extends MY_Controller {
 	public function logout(){
 		$this->session->sess_destroy();
 
-		$this->load->view('admin/auth/login');
+		redirect('user');
 	}
 
 	public function delete($id){
