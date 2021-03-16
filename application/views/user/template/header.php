@@ -16,6 +16,10 @@
             .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before{
                 content: normal;
             }
+
+            .bg-dark {
+                background-color: #28527a !important;
+            }
         </style>
     </head>
     <body class="sb-nav-fixed sb-sidenav-toggled">
@@ -30,7 +34,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?php echo site_url('auth/login') ?>">login</a>
+                        <a class="dropdown-item" href="<?php echo site_url('auth/login') ?>">Login</a>
                     </div>
                 </li>
             </ul>

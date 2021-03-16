@@ -14,6 +14,16 @@ class Benih_model extends CI_Model {
 		return $query->result_array();
 	}
 
+	public function get_jenis_komoditi($id){
+		if($id == '1'){
+			$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND komoditi.jenis = 1');	
+		}else{
+			$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND komoditi.jenis = 2');
+		}
+		
+		return $query->result_array();
+	}
+
 	public function create($file_name = NULL){
 
 		if($_FILES['file_name']['name'] != ""){
