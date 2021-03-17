@@ -61,7 +61,7 @@
             });
         </script>
         <script>
-                var oTable = $('#dataTable').DataTable();
+                var oTable = $('.table').DataTable();
 
                 $("#tgl_mulai").change(function() {
                     minDateFilter = new Date(this.value).getTime();

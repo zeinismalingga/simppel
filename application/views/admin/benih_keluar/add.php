@@ -19,7 +19,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Benih</label>
-                                <select class="form-control" id="benih" name="id_benih" required>
+                                <select class="form-control select2" id="benih" name="id_benih" required>
                                     <option value="">Pilih</option>
                                     <?php foreach($benih as $benih_item): ?>
                                     <option value="<?php echo $benih_item['id_benih'] ?>"><?php echo $benih_item['nama_komoditi'] ?></option>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Jenis Keluar</label>
-                                <select class="form-control" name="jenis_keluar" required>
+                                <select class="form-control select2" name="jenis_keluar" required>
                                     <option value="">Pilih</option>
                                     <option value="1">Terjual</option>
                                     <option value="2">Mati</option>

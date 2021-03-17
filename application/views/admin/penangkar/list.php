@@ -19,30 +19,25 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>No</th>
-                            <th>Nama Penangkar</th>
-                            <th>No. Telepon/HP</th>
-                            <th>Alamat</th>
-                            <th>Aksi</th>
+                            <th >No</th>
+                            <th >Nama Produsen</th>
+                            <th >Nama Pimpinan</th>
+                            <th >No. HP</th>
+                            <th >Alamat</th>
+                            <th >Luas Lahan (Ha)</th>
+                            <th >Aksi</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama Penangkar</th>
-                            <th>No. Telepon/HP</th>
-                            <th>Alamat</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <?php $no = 1; ?>
                         <?php foreach($penangkar as $penangkar_item): ?>
                             <tr>
                                 <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
                                 <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
                                 <td><?php echo $penangkar_item['no_hp'] ?></td>
                                 <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['luas_lahan'] ?></td>
                                 <td>
                                     <a href="<?php echo site_url('penangkar/edit/'. $penangkar_item['id_penangkar']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                     <a href="<?php echo site_url('penangkar/delete/'. $penangkar_item['id_penangkar']) ?>" class="btn btn-sm btn-danger" onclick="return confirm('apakah anda yakin?')"><i class="fas fa-trash-alt"></i></a>

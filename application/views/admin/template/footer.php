@@ -18,6 +18,7 @@
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="<?php echo base_url('assets') ?>/assets/demo/datatables-demo.js"></script>
         <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
         <script>
             var inp = document.querySelector('#file_name');
             inp.addEventListener('change', function(e){
@@ -35,6 +36,10 @@
                 autoclose : 'true',
                 todayHighlight : 'true',
                 orientation : 'bottom'
+            });
+
+            $('.select2').select2({
+                theme: "bootstrap"
             });
         </script>
         <script>

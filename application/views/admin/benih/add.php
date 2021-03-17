@@ -15,7 +15,7 @@
                         <?php echo form_open_multipart('benih/add') ?>
                             <div class="form-group">
                                 <label>Komoditi</label>
-                                <select class="form-control" name="id_komoditi" required>
+                                <select class="form-control select2" name="id_komoditi" required>
                                     <option value="">Pilih</option>
                                     <?php foreach($komoditi as $komoditi_item): ?>
                                     <option value="<?php echo $komoditi_item['id_komoditi'] ?>"><?php echo $komoditi_item['nama_komoditi'] ?></option>
@@ -24,7 +24,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Varietas</label>
-                                <select class="form-control" name="id_varietas" required>
+                                <select class="form-control select2" name="id_varietas" required>
                                     <option value="">Pilih</option>
                                     <?php foreach($varietas as $varietas_item): ?>
                                     <option value="<?php echo $varietas_item['id_varietas'] ?>"><?php echo $varietas_item['nama_varietas'] ?></option>
@@ -33,7 +33,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Kelas Benih</label>
-                                <select class="form-control" name="id_kelas_benih" required>
+                                <select class="form-control select2" name="id_kelas_benih" required>
                                     <option value="">Pilih</option>
                                     <?php foreach($kelas_benih as $kelas_benih_item): ?>
                                     <option value="<?php echo $kelas_benih_item['id_kelas_benih'] ?>"><?php echo $kelas_benih_item['nama_kelas'] ?></option>

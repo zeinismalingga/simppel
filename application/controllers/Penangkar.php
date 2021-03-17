@@ -10,7 +10,7 @@ class Penangkar extends MY_Controller {
 
 	public function list()
 	{
-		$data['judul'] = 'Data Penangkar';
+		$data['judul'] = 'Data Produsen Benih';
 		$data['penangkar'] = $this->penangkar_model->get_all();
 		$this->load->view('admin/template/header');
 		$this->load->view('admin/penangkar/list', $data);
@@ -19,7 +19,9 @@ class Penangkar extends MY_Controller {
 
 	public function add()
 	{
-		$data['judul'] = 'Tambah Penangkar';
+		$data['judul'] = 'Tambah Produsen Benih';
+		$data['kota'] = $this->penangkar_model->get_kota();
+		$data['komoditi'] = $this->komoditi_model->get_all();
 
 		$this->form_validation->set_rules('nama_penangkar', 'nama penangkar', 'required');
 
@@ -36,9 +38,11 @@ class Penangkar extends MY_Controller {
 
 	public function edit($id)
 	{
-		$data['judul'] = 'Edit Penangkar';
+		$data['judul'] = 'Edit Produsen Benih';
 		$data['id'] = $id;
 		$data['penangkar'] = $this->penangkar_model->get_all($id);
+		$data['kota'] = $this->penangkar_model->get_kota();
+		$data['komoditi'] = $this->komoditi_model->get_all();
 
 		$this->form_validation->set_rules('nama_penangkar', 'nama penangkar', 'required');
 

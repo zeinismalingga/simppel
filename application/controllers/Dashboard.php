@@ -10,7 +10,8 @@ class Dashboard extends MY_Controller {
 
 	public function index()
 	{
-		$data['benih'] = $this->benih_model->get_all();
+		$data['benih_tp'] = $this->benih_model->get_jenis_komoditi('1');
+		$data['benih_hortik'] = $this->benih_model->get_jenis_komoditi('2');
 		$this->load->view('admin/template/header');
 		$this->load->view('admin/dashboard', $data);
 		$this->load->view('admin/template/footer');

@@ -7,6 +7,7 @@ class User extends CI_Controller {
 	{
 		$data['benih_tp'] = $this->benih_model->get_jenis_komoditi('1');
 		$data['benih_hortik'] = $this->benih_model->get_jenis_komoditi('2');
+		$data['penangkar'] = $this->penangkar_model->get_all();
 		$this->load->view('user/template/header');
 		$this->load->view('user/dashboard', $data);
 		$this->load->view('user/template/footer');

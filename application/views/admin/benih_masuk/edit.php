@@ -19,7 +19,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Benih</label>
-                                <select class="form-control" id="benih" name="id_benih" required>
+                                <select class="form-control select2" id="benih" name="id_benih" required>
                                     <option value="<?php echo $benih_masuk['id_benih'] ?>"><?php echo $benih_masuk['nama_komoditi'] ?></option>
                                     <?php foreach($benih as $benih_item): ?>
                                     <option value="<?php echo $benih_item['id_benih'] ?>"><?php echo $benih_item['nama_komoditi'] ?></option>
@@ -28,7 +28,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Penangkar</label>
-                                <select class="form-control" name="id_penangkar" required>
+                                <select class="form-control select2" name="id_penangkar" required>
                                     <option value="<?php echo $benih_masuk['id_penangkar'] ?>"><?php echo $benih_masuk['nama_penangkar'] ?></option>
                                     <?php foreach($penangkar as $penangkar_item): ?>
                                     <option value="<?php echo $penangkar_item['id_penangkar'] ?>"><?php echo $penangkar_item['nama_penangkar'] ?></option>

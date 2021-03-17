@@ -19,7 +19,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Komoditi</label>
-                                <select class="form-control" name="id_komoditi" required>
+                                <select class="form-control select2" name="id_komoditi" required>
                                     <option value="">Pilih</option>
                                     <?php foreach($komoditi as $komoditi_item): ?>
                                     <option value="<?php echo $komoditi_item['id_komoditi'] ?>"><?php echo $komoditi_item['nama_komoditi'] ?></option>
