@@ -12,6 +12,8 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
         <link id="bsdp-css" href="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="icon" href="<?php echo base_url('assets/assets/img/favicon.ico') ?>" type="image/x-icon">
         <style type="text/css">
             .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before{
                 content: normal;
@@ -44,7 +46,7 @@
     </head>
     <body class="sb-nav-fixed sb-sidenav-toggled">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Dinas Pangan, Tanaman Pangan dan Hortikultura</a>
+            <a class="navbar-brand" href="<?php echo site_url() ?>">Dinas Pangan, Tanaman Pangan dan Hortikultura</a>
             <!-- <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button> -->
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
