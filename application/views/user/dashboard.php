@@ -3,6 +3,7 @@
         <div class="text-center">
             <img src="<?php echo base_url('assets/assets/img/logo.png') ?>" class="img-fluid mt-4" width="70">
             <h3 class="mt-3 mb-3">Sistem Informasi Pelayanan Perbenihan Unggul</h3>    
+            <h4 class="mt-3 mb-3">(SIMPPEL)</h4>    
         </div>
         
         
