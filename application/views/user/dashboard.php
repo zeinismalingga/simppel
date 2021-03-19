@@ -103,7 +103,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
@@ -142,7 +142,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
@@ -181,7 +181,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
@@ -220,7 +220,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
@@ -259,7 +259,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
@@ -298,7 +298,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
@@ -337,7 +337,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
@@ -376,7 +376,7 @@
                             <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
-                            <th>Kab/Kota</th>
+                            <th>Lokasi</th>
                             <th>Alamat</th>
                             <th>Jenis Tanaman</th>
                         </tr>
