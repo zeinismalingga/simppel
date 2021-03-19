@@ -62,4 +62,10 @@ class Penangkar_model extends CI_Model {
 		return $query->result_array();
 	}
 
+	public function get_by_kota($id)
+	{
+		$query = $this->db->query("SELECT * FROM penangkar, kota, komoditi WHERE penangkar.id_kota = kota.id_kota AND penangkar.id_komoditi = komoditi.id_komoditi AND kota.id_kota = $id");
+		return $query->result_array();
+	}
+
 }

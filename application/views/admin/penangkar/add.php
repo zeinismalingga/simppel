@@ -23,7 +23,7 @@
                             </div>
                             <div class="form-group">
                                 <label>No. Telepon/Hp</label>
-                                <input type="text" name="no_hp" class="form-control" required>                            
+                                <input type="text" name="no_hp" class="form-control">                            
                             </div>
                             <div class="form-group">
                                 <label>Alamat</label>
@@ -65,7 +65,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Tanggal</label>
-                                <input type="text" name="tgl" class="form-control datepicker" required>                            
+                                <input type="text" name="tgl" class="form-control datepicker">                            
                             </div>
                             <button type="submit" class="btn btn-primary float-right">Tambah</button>
                             <?php echo form_close() ?>                            

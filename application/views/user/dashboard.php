@@ -92,7 +92,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih
+                Produsen Benih Kutai Kartanegara
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -100,7 +100,7 @@
                     <thead>
                         <tr style="background-color: #f4d160">
                             <th>No</th>
-                            <th>Nama Produsen</th>
+                            <th>Nama Produsen Benih</th>
                             <th>Nama Pimpinan</th>
                             <th>No. HP</th>
                             <th>Kab/Kota</th>
@@ -110,7 +110,280 @@
                     </thead>
                     <tbody>
                         <?php $no = 1; ?>
-                        <?php foreach($penangkar as $penangkar_item): ?>
+                        <?php foreach($penangkar_kukar as $penangkar_item): ?>
+                            <tr>
+                                <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
+                                <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
+                                <td><?php echo $penangkar_item['no_hp'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
+                                <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['nama_komoditi'] ?></td>
+                            </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Produsen Benih Penajam Paser Utama
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: #f4d160">
+                            <th>No</th>
+                            <th>Nama Produsen Benih</th>
+                            <th>Nama Pimpinan</th>
+                            <th>No. HP</th>
+                            <th>Kab/Kota</th>
+                            <th>Alamat</th>
+                            <th>Jenis Tanaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no = 1; ?>
+                        <?php foreach($penangkar_ppu as $penangkar_item): ?>
+                            <tr>
+                                <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
+                                <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
+                                <td><?php echo $penangkar_item['no_hp'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
+                                <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['nama_komoditi'] ?></td>
+                            </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Produsen Benih Kutai Timur
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: #f4d160">
+                            <th>No</th>
+                            <th>Nama Produsen Benih</th>
+                            <th>Nama Pimpinan</th>
+                            <th>No. HP</th>
+                            <th>Kab/Kota</th>
+                            <th>Alamat</th>
+                            <th>Jenis Tanaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no = 1; ?>
+                        <?php foreach($penangkar_kutim as $penangkar_item): ?>
+                            <tr>
+                                <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
+                                <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
+                                <td><?php echo $penangkar_item['no_hp'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
+                                <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['nama_komoditi'] ?></td>
+                            </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Produsen Benih Samarinda
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: #f4d160">
+                            <th>No</th>
+                            <th>Nama Produsen Benih</th>
+                            <th>Nama Pimpinan</th>
+                            <th>No. HP</th>
+                            <th>Kab/Kota</th>
+                            <th>Alamat</th>
+                            <th>Jenis Tanaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no = 1; ?>
+                        <?php foreach($penangkar_samarinda as $penangkar_item): ?>
+                            <tr>
+                                <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
+                                <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
+                                <td><?php echo $penangkar_item['no_hp'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
+                                <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['nama_komoditi'] ?></td>
+                            </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Produsen Benih Paser
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: #f4d160">
+                            <th>No</th>
+                            <th>Nama Produsen Benih</th>
+                            <th>Nama Pimpinan</th>
+                            <th>No. HP</th>
+                            <th>Kab/Kota</th>
+                            <th>Alamat</th>
+                            <th>Jenis Tanaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no = 1; ?>
+                        <?php foreach($penangkar_paser as $penangkar_item): ?>
+                            <tr>
+                                <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
+                                <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
+                                <td><?php echo $penangkar_item['no_hp'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
+                                <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['nama_komoditi'] ?></td>
+                            </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Produsen Benih Kutai Barat
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: #f4d160">
+                            <th>No</th>
+                            <th>Nama Produsen Benih</th>
+                            <th>Nama Pimpinan</th>
+                            <th>No. HP</th>
+                            <th>Kab/Kota</th>
+                            <th>Alamat</th>
+                            <th>Jenis Tanaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no = 1; ?>
+                        <?php foreach($penangkar_kubar as $penangkar_item): ?>
+                            <tr>
+                                <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
+                                <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
+                                <td><?php echo $penangkar_item['no_hp'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
+                                <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['nama_komoditi'] ?></td>
+                            </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Produsen Benih Berau
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: #f4d160">
+                            <th>No</th>
+                            <th>Nama Produsen Benih</th>
+                            <th>Nama Pimpinan</th>
+                            <th>No. HP</th>
+                            <th>Kab/Kota</th>
+                            <th>Alamat</th>
+                            <th>Jenis Tanaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no = 1; ?>
+                        <?php foreach($penangkar_berau as $penangkar_item): ?>
+                            <tr>
+                                <td><?php echo $no ?></td>
+                                <td><?php echo $penangkar_item['nama_produsen'] ?></td>
+                                <td><?php echo $penangkar_item['nama_penangkar'] ?></td>
+                                <td><?php echo $penangkar_item['no_hp'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
+                                <td><?php echo $penangkar_item['alamat'] ?></td>
+                                <td><?php echo $penangkar_item['nama_komoditi'] ?></td>
+                            </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Produsen Benih Balikpapan
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: #f4d160">
+                            <th>No</th>
+                            <th>Nama Produsen Benih</th>
+                            <th>Nama Pimpinan</th>
+                            <th>No. HP</th>
+                            <th>Kab/Kota</th>
+                            <th>Alamat</th>
+                            <th>Jenis Tanaman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no = 1; ?>
+                        <?php foreach($penangkar_balikpapan as $penangkar_item): ?>
                             <tr>
                                 <td><?php echo $no ?></td>
                                 <td><?php echo $penangkar_item['nama_produsen'] ?></td>

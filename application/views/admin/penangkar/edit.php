@@ -23,7 +23,7 @@
                             </div>
                             <div class="form-group">
                                 <label>No. Telepon/Hp</label>
-                                <input type="text" name="no_hp" class="form-control" value="<?php echo $penangkar['no_hp'] ?>" required>                            
+                                <input type="text" name="no_hp" class="form-control" value="<?php echo $penangkar['no_hp'] ?>">                            
                             </div>
                             <div class="form-group">
                                 <label>Alamat</label>
@@ -65,7 +65,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Tanggal</label>
-                                <input type="text" name="tgl" class="form-control datepicker" value="<?php echo $penangkar['tgl'] ?>" required>                            
+                                <input type="text" name="tgl" class="form-control datepicker" value="<?php echo $penangkar['tgl'] ?>">                            
                             </div>
                             <button type="submit" class="btn btn-primary float-right">Edit</button>
                             <?php echo form_close() ?>                            
