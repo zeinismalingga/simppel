@@ -92,7 +92,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Kutai Kartanegara
+                Produsen Benih Kabupaten Kutai Kartanegara
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -131,7 +131,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Penajam Paser Utama
+                Produsen Benih Kabupaten Penajam Paser Utama
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -170,7 +170,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Kutai Timur
+                Produsen Benih Kabupaten Kutai Timur
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -209,7 +209,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Samarinda
+                Produsen Benih Kota Samarinda
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -248,7 +248,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Paser
+                Produsen Benih Kabupaten Paser
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -287,7 +287,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Kutai Barat
+                Produsen Benih Kabupaten Kutai Barat
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -326,7 +326,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Berau
+                Produsen Benih Kabupaten Berau
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -365,7 +365,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Produsen Benih Balikpapan
+                Produsen Benih Kota Balikpapan
             </div>
             <div class="card-body">
                 <div class="table-responsive">
