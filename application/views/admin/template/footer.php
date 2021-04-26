@@ -34,7 +34,7 @@
         </script>
         <script>
             $(document).ready(function(){
-               var base_url = window.location.origin + "/inventorybenih";
+               var base_url = window.location.origin + "/simppel";
 
                 $('#benih').change(function(){
                     var id= $('#benih').val();
