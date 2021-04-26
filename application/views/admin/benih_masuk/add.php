@@ -22,7 +22,7 @@
                                 <select class="form-control select2" id="benih" name="id_benih" required>
                                     <option value="">Pilih</option>
                                     <?php foreach($benih as $benih_item): ?>
-                                    <option value="<?php echo $benih_item['id_benih'] ?>"><?php echo $benih_item['nama_komoditi'] ?></option>
+                                    <option value="<?php echo $benih_item['id_benih'] ?>"><?php echo $benih_item['nama_komoditi']. ' - '. $benih_item['nama_varietas'] ?></option>
                                     <?php endforeach;  ?>
                                 </select>                            
                             </div>

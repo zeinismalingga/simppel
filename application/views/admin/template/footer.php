@@ -19,17 +19,7 @@
         <script src="<?php echo base_url('assets') ?>/assets/demo/datatables-demo.js"></script>
         <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
-        <script>
-            var inp = document.querySelector('#file_name');
-            inp.addEventListener('change', function(e){
-                var file = this.files[0];
-                var reader = new FileReader();
-                reader.onload = function(){
-                    document.getElementById('gambar').src = this.result;
-                    };
-                reader.readAsDataURL(file);
-                },false);
-        </script>
+        
         <script>
             $('.datepicker').datepicker({
                 format: 'yyyy-mm-dd',
@@ -79,5 +69,16 @@
              
         </script>
         <?php endif ?>
+        <script>
+            var inp = document.querySelector('#file_name');
+            inp.addEventListener('change', function(e){
+                var file = this.files[0];
+                var reader = new FileReader();
+                reader.onload = function(){
+                    document.getElementById('gambar').src = this.result;
+                    };
+                reader.readAsDataURL(file);
+                },false);
+        </script>
     </body>
 </html>
