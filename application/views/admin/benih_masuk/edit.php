@@ -31,7 +31,7 @@
                                 <select class="form-control select2" name="id_penangkar" required>
                                     <option value="<?php echo $benih_masuk['id_penangkar'] ?>"><?php echo $benih_masuk['nama_penangkar'] ?></option>
                                     <?php foreach($penangkar as $penangkar_item): ?>
-                                    <option value="<?php echo $penangkar_item['id_penangkar'] ?>"><?php echo $penangkar_item['nama_penangkar'] ?></option>
+                                    <option value="<?php echo $penangkar_item['id_penangkar'] ?>"><?php echo $penangkar_item['nama_produsen'] ?></option>
                                     <?php endforeach;  ?>
                                 </select>                            
                             </div>
