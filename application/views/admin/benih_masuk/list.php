@@ -49,7 +49,7 @@
                                 <td><?php echo $benih_masuk_item['tgl'] ?></td>
                                 <td><?php echo $benih_masuk_item['nama_komoditi'] ?></td>
                                 <td><?php echo $benih_masuk_item['nama_varietas'] ?></td>
-                                <td><?php echo $benih_masuk_item['nama_penangkar'] ?></td>
+                                <td><?php echo $benih_masuk_item['nama_produsen'] ?></td>
                                 <td>
                                     <?php echo $benih_masuk_item['jumlah_masuk'] ?>
                                 </td>
