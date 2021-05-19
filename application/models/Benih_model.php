@@ -35,6 +35,7 @@ class Benih_model extends CI_Model {
 				'satuan' => $this->input->post('satuan'),
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
+				'id_anggaran' => $this->input->post('id_anggaran'),
 				'file_name' => $file_name
 			);	
 		}else{
@@ -46,6 +47,7 @@ class Benih_model extends CI_Model {
 				'satuan' => $this->input->post('satuan'),
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
+				'id_anggaran' => $this->input->post('id_anggaran'),
 				'file_name' => 'box.jpg'
 			);
 		}
@@ -64,6 +66,7 @@ class Benih_model extends CI_Model {
 				'satuan' => $this->input->post('satuan'),
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
+				'id_anggaran' => $this->input->post('id_anggaran'),
 				'file_name' => $file_name
 			);	
 		}else{
@@ -75,6 +78,7 @@ class Benih_model extends CI_Model {
 				'satuan' => $this->input->post('satuan'),
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
+				'id_anggaran' => $this->input->post('id_anggaran'),
 			);
 		}
 

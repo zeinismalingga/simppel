@@ -56,7 +56,14 @@
                                 <label>Deskripsi</label>
                                 <textarea class="form-control" name="deskripsi"><?php echo $benih['deskripsi'] ?></textarea>
                             </div>
-                            
+                            <div class="form-group">
+                                <label>Anggaran</label>
+                                <select class="form-control select2" name="id_anggaran" required>
+                                    <option value="<?php echo $benih['id_anggaran'] ?>" selected><?= $benih['id_anggaran'] == '1' ? 'APBN' : 'APBD' ?></option>
+                                    <option value="1">APBN</option>
+                                    <option value="2">APBD</option>
+                                </select>                            
+                            </div>
                             
                     </div>
                 </div>
