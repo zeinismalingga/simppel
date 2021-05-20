@@ -51,6 +51,8 @@ class Benih_keluar extends MY_Controller {
 		$data['penangkar'] = $this->penangkar_model->get_all();
 		$data['benih_keluar'] = $this->benih_keluar_model->get_all($id);
 
+		// die(print_r($data['benih_keluar']));
+
 		$this->form_validation->set_rules('tgl', 'tanggal', 'required');
 
 		if($this->form_validation->run() === FALSE){

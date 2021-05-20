@@ -18,6 +18,18 @@
                                 <input type="text" name="tgl" class="form-control datepicker" required>                            
                             </div>
                             <div class="form-group">
+                                <label>Nama Pembeli</label>
+                                <input type="text" name="nama_pembeli" class="form-control" required>                            
+                            </div>
+                            <div class="form-group">
+                                <label>No. Kwitansi</label>
+                                <input type="text" name="no_kwitansi" class="form-control" required>                            
+                            </div>
+                            <div class="form-group">
+                                <label>Alamat Pembeli</label>
+                                <input type="text" name="alamat_pembeli" class="form-control" required>                            
+                            </div>
+                            <div class="form-group">
                                 <label>Benih</label>
                                 <select class="form-control select2" id="benih" name="id_benih" required>
                                     <option value="">Pilih</option>
@@ -36,6 +48,8 @@
                                     <option value="">Pilih</option>
                                     <option value="1">Terjual</option>
                                     <option value="2">Mati</option>
+                                    <option value="3">Bantuan</option>
+                                    <option value="4">Kawasan</option>
                                 </select>                            
                             </div>
                             <button type="submit" class="btn btn-primary float-right">Tambah</button>

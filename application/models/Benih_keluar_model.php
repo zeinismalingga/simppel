@@ -17,6 +17,9 @@ class Benih_keluar_model extends CI_Model {
 	public function create(){
 		$data = array(
 			'tgl' => $this->input->post('tgl'),
+			'nama_pembeli' => $this->input->post('nama_pembeli'),
+			'no_kwitansi' => $this->input->post('no_kwitansi'),
+			'alamat_pembeli' => $this->input->post('alamat_pembeli'),
 			'id_benih' => $this->input->post('id_benih'),
 			'jenis_keluar' => $this->input->post('jenis_keluar'),
 			'jumlah_keluar' => $this->input->post('jumlah_keluar'),
@@ -28,10 +31,14 @@ class Benih_keluar_model extends CI_Model {
 	public function edit($id){
 		$data = array(
 			'tgl' => $this->input->post('tgl'),
+			'nama_pembeli' => $this->input->post('nama_pembeli'),
+			'no_kwitansi' => $this->input->post('no_kwitansi'),
+			'alamat_pembeli' => $this->input->post('alamat_pembeli'),
 			'id_benih' => $this->input->post('id_benih'),
 			'jenis_keluar' => $this->input->post('jenis_keluar'),
 			'jumlah_keluar' => $this->input->post('jumlah_keluar'),
 		);
+
 		
 		$this->db->where('id_benih_keluar', $id);
 		return $this->db->update('benih_keluar', $data);

@@ -21,11 +21,12 @@
                         <tr>
                             <th>No</th>
                             <th>Tanggal</th>
+                            <th>Nama Pembeli</th>
+                            <th>No. Kwitansi</th>
                             <th>Benih</th>
                             <th>Varietas</th>
                             <th>Jumlah Keluar</th>
                             <th>Jenis Keluar</th>
-                            <th>Satuan</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -33,11 +34,12 @@
                         <tr>
                             <th>No</th>
                             <th>Tanggal</th>
+                            <th>Nama Pembeli</th>
+                            <th>No. Kwitansi</th>
                             <th>Benih</th>
                             <th>Varietas</th>
                             <th>Jumlah Keluar</th>
                             <th>Jenis Keluar</th>
-                            <th>Satuan</th>
                             <th>Aksi</th>
                         </tr>
                     </tfoot>
@@ -47,18 +49,28 @@
                             <tr>
                                 <td><?php echo $no ?></td>
                                 <td><?php echo $benih_keluar_item['tgl'] ?></td>
+                                <td><?php echo $benih_keluar_item['nama_pembeli'] ?></td>
+                                <td><?php echo $benih_keluar_item['no_kwitansi'] ?></td>
                                 <td><?php echo $benih_keluar_item['nama_komoditi'] ?></td>
                                 <td><?php echo $benih_keluar_item['nama_varietas'] ?></td>
                                 <td><?php echo $benih_keluar_item['jumlah_keluar'] ?></td>
-                                <?php 
-                                    if($benih_keluar_item['jenis_keluar'] == 1){
-                                        $jenis_keluar = 'Terjual';
-                                    }elseif ($benih_keluar_item['jenis_keluar'] == 2) {
-                                        $jenis_keluar = 'Terjual';
-                                    }
+                                <?php
+                                    switch ($benih_keluar_item['jenis_keluar']) {
+                                        case '1':
+                                            $jenis_keluar = 'Terjual';
+                                            break;
+                                        case '2':
+                                            $jenis_keluar = 'Mati';
+                                            break;
+                                        case '3':
+                                            $jenis_keluar = 'Bantuan';
+                                            break;
+                                        case '4':
+                                            $jenis_keluar = 'Kawasan';
+                                            break;
+                                    } 
                                 ?>
                                 <td><?php echo $jenis_keluar ?></td>
-                                <td><?php echo $benih_keluar_item['satuan'] ?></td>
                                 <td>
                                     <a href="<?php echo site_url('benih_keluar/edit/'. $benih_keluar_item['id_benih_keluar']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                     <a href="<?php echo site_url('benih_keluar/delete/'. $benih_keluar_item['id_benih_keluar']) ?>" class="btn btn-sm btn-danger" onclick="return confirm('apakah anda yakin?')"><i class="fas fa-trash-alt"></i></a>
