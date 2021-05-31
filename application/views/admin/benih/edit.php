@@ -59,7 +59,20 @@
                             <div class="form-group">
                                 <label>Anggaran</label>
                                 <select class="form-control select2" name="id_anggaran" required>
-                                    <option value="<?php echo $benih['id_anggaran'] ?>" selected><?= $benih['id_anggaran'] == '1' ? 'APBN' : 'APBD' ?></option>
+                                    <?php 
+                                        switch ($benih['id_anggaran']) {
+                                            case '1':
+                                                $anggaran = 'APBN';
+                                            break;
+                                            case '2':
+                                                $anggaran = 'APBD';
+                                            break;
+                                            case '':
+                                                $anggaran = 'Pilih Anggaran';
+                                            break;
+                                        }
+                                    ?>
+                                    <option value="<?php echo $benih['id_anggaran'] ?>" selected><?= $anggaran ?></option>
                                     <option value="1">APBN</option>
                                     <option value="2">APBD</option>
                                 </select>                            
