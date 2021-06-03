@@ -26,7 +26,7 @@
                             <th>Stok Benih</th>
                             <th>Satuan</th>
                             <th>Harga Satuan</th>
-                            <th>Deskripsi</th>
+                            <th>Anggaran</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -39,7 +39,7 @@
                             <th>Stok Benih</th>
                             <th>Satuan</th>
                             <th>Harga Satuan</th>
-                            <th>Deskripsi</th>
+                            <th>Anggaran</th>
                             <th>Aksi</th>
                         </tr>
                     </tfoot>
@@ -54,7 +54,20 @@
                                 <td><?php echo $benih_item['stok_benih'] ?></td>
                                 <td><?php echo $benih_item['satuan'] ?></td>
                                 <td>Rp. <?php echo $benih_item['harga'] ?></td>
-                                <td><?php echo $benih_item['deskripsi'] ?></td>
+                                    <?php 
+                                        switch ($benih_item['id_anggaran']) {
+                                            case '1':
+                                                $anggaran = 'APBN';
+                                            break;
+                                            case '2':
+                                                $anggaran = 'APBD';
+                                            break;
+                                            case '':
+                                                $anggaran = 'Pilih Anggaran';
+                                            break;
+                                        }
+                                    ?>
+                                <td><?php echo $anggaran ?></td>
                                 <td>
                                     <a href="<?php echo site_url('benih/edit/'. $benih_item['id_benih']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                     <a href="<?php echo site_url('benih/delete/'. $benih_item['id_benih']) ?>" class="btn btn-sm btn-danger" onclick="return confirm('apakah anda yakin?')"><i class="fas fa-trash-alt"></i></a>
