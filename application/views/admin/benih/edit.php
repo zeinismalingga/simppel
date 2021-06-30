@@ -67,6 +67,9 @@
                                             case '2':
                                                 $anggaran = 'APBD';
                                             break;
+                                            case '3':
+                                                $anggaran = 'PRODUSEN';
+                                            break;
                                             case '':
                                                 $anggaran = 'Pilih Anggaran';
                                             break;
@@ -75,6 +78,7 @@
                                     <option value="<?php echo $benih['id_anggaran'] ?>" selected><?= $anggaran ?></option>
                                     <option value="1">APBN</option>
                                     <option value="2">APBD</option>
+                                    <option value="2">PRODUSEN</option>
                                 </select>                            
                             </div>
                             <div class="form-group">

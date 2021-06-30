@@ -62,6 +62,7 @@
                                     <option value="">Pilih</option>
                                     <option value="1">APBN</option>
                                     <option value="2">APBD</option>
+                                    <option value="2">PRODUSEN</option>
                                 </select>                            
                             </div>
                             <div class="form-group">
