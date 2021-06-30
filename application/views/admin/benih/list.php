@@ -27,6 +27,7 @@
                             <th>Satuan</th>
                             <th>Harga Satuan</th>
                             <th>Anggaran</th>
+                            <th>Produsen</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -40,6 +41,7 @@
                             <th>Satuan</th>
                             <th>Harga Satuan</th>
                             <th>Anggaran</th>
+                            <th>Produsen</th>
                             <th>Aksi</th>
                         </tr>
                     </tfoot>
@@ -68,6 +70,7 @@
                                         }
                                     ?>
                                 <td><?php echo $anggaran ?></td>
+                                <td><?php echo $benih_item['nama_produsen'] ?></td>
                                 <td>
                                     <a href="<?php echo site_url('benih/edit/'. $benih_item['id_benih']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                     <a href="<?php echo site_url('benih/delete/'. $benih_item['id_benih']) ?>" class="btn btn-sm btn-danger" onclick="return confirm('apakah anda yakin?')"><i class="fas fa-trash-alt"></i></a>

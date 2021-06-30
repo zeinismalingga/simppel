@@ -69,23 +69,51 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Transaksi</div>
-                            <a class="nav-link" href="<?php echo site_url('benih_masuk/list') ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Benih Masuk
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <a class="nav-link" href="<?php echo site_url('benih_keluar/list') ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="<?php echo site_url('benih_masuk/list/1') ?>">APBN</a>
+                                    <a class="nav-link" href="<?php echo site_url('benih_masuk/list/2') ?>">APBD</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts4" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Benih Keluar
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
+                            <div class="collapse" id="collapseLayouts4" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="<?php echo site_url('benih_keluar/list/1') ?>">APBN</a>
+                                    <a class="nav-link" href="<?php echo site_url('benih_keluar/list/2') ?>">APBD</a>
+                                </nav>
+                            </div>
                             <div class="sb-sidenav-menu-heading">Laporan</div>
-                            <a class="nav-link" href="<?php echo site_url('laporan_masuk/list') ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts5" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Laporan Masuk
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <a class="nav-link" href="<?php echo site_url('laporan_keluar/list') ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            <div class="collapse" id="collapseLayouts5" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="<?php echo site_url('laporan_masuk/pilih/1') ?>">APBN</a>
+                                    <a class="nav-link" href="<?php echo site_url('laporan_masuk/pilih/2') ?>">APBD</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts6" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Laporan Keluar
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
+                            <div class="collapse" id="collapseLayouts6" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="<?php echo site_url('laporan_keluar/pilih/1') ?>">APBN</a>
+                                    <a class="nav-link" href="<?php echo site_url('laporan_keluar/pilih/2') ?>">APBD</a>
+                                </nav>
+                            </div>
                             <?php if($this->session->userdata('level') == "admin"): ?>
                             <div class="sb-sidenav-menu-heading">User Manager</div>
                             <a class="nav-link" href="<?php echo site_url('auth/list_user') ?>">

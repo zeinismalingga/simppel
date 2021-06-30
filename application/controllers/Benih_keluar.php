@@ -8,10 +8,10 @@ class Benih_keluar extends MY_Controller {
 		$this->cekLogin();
 	}
 
-	public function list()
+	public function list($id_anggaran)
 	{
 		$data['judul'] = 'Data Benih Keluar';
-		$data['benih_keluar'] = $this->benih_keluar_model->get_all();
+		$data['benih_keluar'] = $this->benih_keluar_model->get_all('', $id_anggaran);
 		$this->load->view('admin/template/header');
 		$this->load->view('admin/benih_keluar/list', $data);
 		$this->load->view('admin/template/footer');
@@ -21,7 +21,6 @@ class Benih_keluar extends MY_Controller {
 	{
 		$data['judul'] = 'Tambah Benih Keluar';
 		$data['benih'] = $this->benih_model->get_all();
-		$data['penangkar'] = $this->penangkar_model->get_all();
 
 		$this->form_validation->set_rules('tgl', 'tanggal', 'required');
 
@@ -48,7 +47,6 @@ class Benih_keluar extends MY_Controller {
 		$data['judul'] = 'Edit Benih Keluar';
 		$data['id'] = $id;
 		$data['benih'] = $this->benih_model->get_all();
-		$data['penangkar'] = $this->penangkar_model->get_all();
 		$data['benih_keluar'] = $this->benih_keluar_model->get_all($id);
 
 		// die(print_r($data['benih_keluar']));

@@ -77,6 +77,15 @@
                                     <option value="2">APBD</option>
                                 </select>                            
                             </div>
+                            <div class="form-group">
+                                <label>Produsen/Penangkar</label>
+                                <select class="form-control select2" name="id_penangkar" required>
+                                    <option value="<?php echo $benih['id_penangkar'] ?>"><?php echo $benih['nama_produsen'] ?></option>
+                                    <?php foreach($penangkar as $penangkar_item): ?>
+                                    <option value="<?php echo $penangkar_item['id_penangkar'] ?>"><?php echo $penangkar_item['nama_produsen'] ?></option>
+                                    <?php endforeach;  ?>
+                                </select>                            
+                            </div>
                             
                     </div>
                 </div>

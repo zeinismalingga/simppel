@@ -3,14 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Benih_masuk_model extends CI_Model {
 
-	public function get_all($id = NULL)
+	public function get_all($id = NULL, $id_anggaran)
 	{
 		if($id != NULL){
 			$query = $this->db->query("SELECT * FROM benih_masuk, benih, komoditi, penangkar, varietas, kelas_benih WHERE benih_masuk.id_benih = benih.id_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih_masuk.id_penangkar = penangkar.id_penangkar AND benih.id_varietas = varietas.id_varietas AND benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih_masuk.id_benih_masuk = $id");
 			return $query->row_array();
 		}
 
-		$query = $this->db->query('SELECT * FROM benih_masuk, benih, komoditi, penangkar, varietas WHERE benih_masuk.id_benih = benih.id_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih_masuk.id_penangkar = penangkar.id_penangkar AND benih.id_varietas = varietas.id_varietas');
+		$query = $this->db->query("SELECT * FROM benih_masuk, benih, komoditi, penangkar, varietas WHERE benih_masuk.id_benih = benih.id_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih_masuk.id_penangkar = penangkar.id_penangkar AND benih.id_varietas = varietas.id_varietas AND benih.id_anggaran = $id_anggaran");
 		return $query->result_array();
 	}
 

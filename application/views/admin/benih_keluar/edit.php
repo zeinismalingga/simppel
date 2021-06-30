@@ -68,7 +68,7 @@
                                     <option value="4">Kawasan</option>
                                 </select>                            
                             </div>
-                            <button type="submit" class="btn btn-primary float-right">Tambah</button>
+                            <button type="submit" class="btn btn-primary float-right">Edit</button>
                             <?php echo form_close() ?>                            
                             
                     </div>

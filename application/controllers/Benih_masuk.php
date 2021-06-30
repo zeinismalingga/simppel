@@ -8,10 +8,11 @@ class Benih_masuk extends MY_Controller {
 		$this->cekLogin();
 	}
 
-	public function list()
+	public function list($id_anggaran)
 	{
 		$data['judul'] = 'Data Benih Masuk';
-		$data['benih_masuk'] = $this->benih_masuk_model->get_all();
+		$data['benih_masuk'] = $this->benih_masuk_model->get_all('', $id_anggaran);
+		// die(var_dump($data['benih_masuk']));
 		$this->load->view('admin/template/header');
 		$this->load->view('admin/benih_masuk/list', $data);
 		$this->load->view('admin/template/footer');

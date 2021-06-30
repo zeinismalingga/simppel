@@ -8,12 +8,13 @@ class Laporan_masuk extends MY_Controller {
 		$this->cekLogin();
 	}
 
-	public function list()
+	public function pilih($id_anggaran)
 	{
 		$data['judul'] = 'Laporan Benih Masuk';
-		$data['benih_masuk'] = $this->benih_masuk_model->get_all();
+		$data['komoditi'] = $this->benih_masuk_model->get_all('', $id_anggaran);
+
 		$this->load->view('admin/template/header');
-		$this->load->view('admin/laporan_masuk/list', $data);
+		$this->load->view('admin/laporan_masuk/pilih', $data);
 		$this->load->view('admin/template/footer');
 	}
 

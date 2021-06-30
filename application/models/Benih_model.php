@@ -6,11 +6,11 @@ class Benih_model extends CI_Model {
 	public function get_all($id = NULL)
 	{
 		if($id != NULL){
-			$query = $this->db->query("SELECT * FROM benih, kelas_benih, komoditi, varietas WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND benih.id_benih = $id");
+			$query = $this->db->query("SELECT * FROM benih, kelas_benih, komoditi, varietas, penangkar WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND benih.id_penangkar = penangkar.id_penangkar AND benih.id_benih = $id");
 			return $query->row_array();
 		}
 
-		$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas');
+		$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas, penangkar WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND benih.id_penangkar = penangkar.id_penangkar');
 		return $query->result_array();
 	}
 
@@ -36,6 +36,7 @@ class Benih_model extends CI_Model {
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
 				'id_anggaran' => $this->input->post('id_anggaran'),
+				'id_penangkar' => $this->input->post('id_penangkar'),
 				'file_name' => $file_name
 			);	
 		}else{
@@ -48,6 +49,7 @@ class Benih_model extends CI_Model {
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
 				'id_anggaran' => $this->input->post('id_anggaran'),
+				'id_penangkar' => $this->input->post('id_penangkar'),
 				'file_name' => 'box.jpg'
 			);
 		}
@@ -67,6 +69,7 @@ class Benih_model extends CI_Model {
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
 				'id_anggaran' => $this->input->post('id_anggaran'),
+				'id_penangkar' => $this->input->post('id_penangkar'),
 				'file_name' => $file_name
 			);	
 		}else{
@@ -79,6 +82,7 @@ class Benih_model extends CI_Model {
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
 				'id_anggaran' => $this->input->post('id_anggaran'),
+				'id_penangkar' => $this->input->post('id_penangkar'),
 			);
 		}
 

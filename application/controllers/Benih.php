@@ -23,6 +23,7 @@ class Benih extends MY_Controller {
 		$data['komoditi'] = $this->komoditi_model->get_all();
 		$data['varietas'] = $this->varietas_model->get_all();
 		$data['kelas_benih'] = $this->kelas_benih_model->get_all();
+		$data['penangkar'] = $this->penangkar_model->get_all();
 
 		$this->form_validation->set_rules('id_komoditi', 'komoditi', 'required');
 
@@ -75,6 +76,7 @@ class Benih extends MY_Controller {
 		$data['komoditi'] = $this->komoditi_model->get_all();
 		$data['varietas'] = $this->varietas_model->get_all();
 		$data['kelas_benih'] = $this->kelas_benih_model->get_all();
+		$data['penangkar'] = $this->penangkar_model->get_all();
 
 		$this->form_validation->set_rules('id_komoditi', 'komoditi', 'required');
 
