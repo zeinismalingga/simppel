@@ -78,7 +78,7 @@
                                     <option value="<?php echo $benih['id_anggaran'] ?>" selected><?= $anggaran ?></option>
                                     <option value="1">APBN</option>
                                     <option value="2">APBD</option>
-                                    <option value="2">PRODUSEN</option>
+                                    <option value="3">PRODUSEN</option>
                                 </select>                            
                             </div>
                             <div class="form-group">

@@ -64,6 +64,9 @@
                                             case '2':
                                                 $anggaran = 'APBD';
                                             break;
+                                            case '3':
+                                                $anggaran = 'PRODUSEN';
+                                            break;
                                             case '':
                                                 $anggaran = 'Pilih Anggaran';
                                             break;
