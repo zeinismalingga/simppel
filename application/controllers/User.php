@@ -8,6 +8,9 @@ class User extends CI_Controller {
 		$data['benih_tp'] = $this->benih_model->get_jenis_komoditi('1');
 		$data['benih_hortik'] = $this->benih_model->get_jenis_komoditi('2');
 
+		$data['benih_tp_kabkot'] = $this->benih_model->get_benih_kabkot('1');
+		$data['benih_hortik_kabkot'] = $this->benih_model->get_benih_kabkot('2');
+
 		$data['penangkar_kukar'] = $this->penangkar_model->get_by_kota('2');
 		$data['penangkar_ppu'] = $this->penangkar_model->get_by_kota('10');
 		$data['penangkar_kutim'] = $this->penangkar_model->get_by_kota('7');
