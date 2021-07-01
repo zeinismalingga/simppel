@@ -117,7 +117,7 @@
                             <tr>
                                 <td><?php echo $no ?></td>
                                 <td><?php echo $benih_item['nama_produsen'] ?></td>
-                                <td><?php echo $benih_item['nama_kota'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
                                 <td><?php echo $benih_item['alamat'] ?></td>
                                 <td><?php echo $benih_item['nama_komoditi'] ?></td>
                                 <td><?php echo $benih_item['nama_varietas'] ?></td>
@@ -162,7 +162,7 @@
                             <tr>
                                 <td><?php echo $no ?></td>
                                 <td><?php echo $benih_item['nama_produsen'] ?></td>
-                                <td><?php echo $benih_item['nama_kota'] ?></td>
+                                <td><?php echo ucwords($penangkar_item['nama_kota']) ?></td>
                                 <td><?php echo $benih_item['alamat'] ?></td>
                                 <td><?php echo $benih_item['nama_komoditi'] ?></td>
                                 <td><?php echo $benih_item['nama_varietas'] ?></td>
