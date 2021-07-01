@@ -16,9 +16,9 @@ class Benih_model extends CI_Model {
 
 	public function get_jenis_komoditi($id){
 		if($id == '1'){
-			$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas, kota WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND komoditi.jenis = 1');	
+			$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas, penangkar WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND benih.id_penangkar = penangkar.id_penangkar AND benih.id_penangkar = 119 AND komoditi.jenis = 1');	
 		}else{
-			$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND komoditi.jenis = 2');
+			$query = $this->db->query('SELECT * FROM benih, kelas_benih, komoditi, varietas, penangkar WHERE benih.id_kelas_benih = kelas_benih.id_kelas_benih AND benih.id_komoditi = komoditi.id_komoditi AND benih.id_varietas = varietas.id_varietas AND benih.id_penangkar = penangkar.id_penangkar AND benih.id_penangkar = 119 AND komoditi.jenis = 2');
 		}
 		
 		return $query->result_array();
