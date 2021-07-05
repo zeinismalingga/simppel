@@ -9,10 +9,12 @@
         <div class="row mb-4">
             <div class="col-md-3">
                 <table class="table table-bordered">
-                    <tr> 
-                        <td><i class="fas fa-users"></i> Total Pengunjung</td>
-                        <td><?php echo number_format($pengunjung, 0, ",", ".") ?></td>
-                    </tr>
+                    <thead>
+                        <tr> 
+                            <td><i class="fas fa-users"></i> Total Pengunjung</td>
+                            <td><?php echo number_format($pengunjung, 0, ",", ".") ?></td>
+                        </tr>
+                    </thead>
                 </table>
             </div>
         </div>
