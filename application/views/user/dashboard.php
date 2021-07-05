@@ -12,7 +12,6 @@
                     <tr> 
                         <td><i class="fas fa-users"></i> Total Pengunjung</td>
                         <td><?php echo number_format($pengunjung, 0, ",", ".") ?></td>
-
                     </tr>
                 </table>
             </div>

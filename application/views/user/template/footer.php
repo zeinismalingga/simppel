@@ -19,6 +19,15 @@
         <script src="<?php echo base_url('assets') ?>/assets/demo/datatables-demo.js"></script>
         <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
         <script>
+                var oTable = $('.table').DataTable();
+
+                $("#tgl_mulai").change(function() {
+                    minDateFilter = new Date(this.value).getTime();
+                    alert(minDateFilter);
+                    oTable.Draw();
+                  });
+        </script>
+        <script>
             var inp = document.querySelector('#file_name');
             inp.addEventListener('change', function(e){
                 var file = this.files[0];
@@ -60,15 +69,7 @@
                 });
             });
         </script>
-        <script>
-                var oTable = $('.table').DataTable();
-
-                $("#tgl_mulai").change(function() {
-                    minDateFilter = new Date(this.value).getTime();
-                    alert(minDateFilter);
-                    oTable.Draw();
-                  });
-        </script>
+        
         <?php if(current_url() == base_url().'laporan_masuk/list'): ?>
         <script>
              
