@@ -16,7 +16,7 @@
         <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
         <script>
             $(document).ready(function() {
-              var dataTables = $('.table').DataTable();
+              var dataTables = $('.dataTable').DataTable();
             });
         </script>
         <script>
