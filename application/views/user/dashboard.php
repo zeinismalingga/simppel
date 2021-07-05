@@ -12,7 +12,7 @@
                     <thead>
                         <tr> 
                             <td><i class="fas fa-users"></i> Total Pengunjung</td>
-                            <td><?php echo number_format($pengunjung, 0, ",", ".") ?></td>
+                            <td><strong><?php echo number_format($pengunjung, 0, ",", ".") ?></strong></td>
                         </tr>
                     </thead>
                 </table>
