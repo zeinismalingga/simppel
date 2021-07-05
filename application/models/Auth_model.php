@@ -57,4 +57,13 @@ class Auth_model extends CI_Model {
 		$this->db->where('id_user', $id);
     	return $this->db->delete('users');
 	}
+
+	public function add_pengunjung(){
+
+		$data = array(
+			'ip_address' => $_SERVER['REMOTE_ADDR'],
+		);
+
+		return $this->db->insert('pengunjung', $data);
+	}
 }

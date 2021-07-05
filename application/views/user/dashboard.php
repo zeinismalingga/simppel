@@ -6,7 +6,19 @@
             <h4 class="mt-3 mb-3">(SIMPPEL)</h4>    
         </div>
         
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <table class="table table-bordered">
+                    <tr> 
+                        <td><i class="fas fa-users"></i> Total Pengunjung</td>
+                        <td><?php echo number_format($pengunjung, 0, ",", ".") ?></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
         
+
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
@@ -45,6 +57,9 @@
                     </tbody>
                 </table>
                 </div>
+            </div>
+            <div class="card-footer">
+                <strong><i class="fas fa-phone-square-alt"></i> Contact Person : <a href="tel:+6285246958700">0852-4695-8700</a> (Arif)</strong> 
             </div>
         </div>
 
@@ -86,6 +101,9 @@
                     </tbody>
                 </table>
                 </div>
+            </div>
+            <div class="card-footer">
+                <strong><i class="fas fa-phone-square-alt"></i> Contact Person : <a href="tel:+6285346879592">0853-4687-9592</a> (Nila)</strong> 
             </div>
         </div>
 

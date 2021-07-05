@@ -20,6 +20,11 @@ class User extends CI_Controller {
 		$data['penangkar_berau'] = $this->penangkar_model->get_by_kota('8');
 		$data['penangkar_balikpapan'] = $this->penangkar_model->get_by_kota('1');
 
+		$data['pengunjung'] = $this->db->from("pengunjung")->count_all_results();
+
+		// add pengunjung 
+		$this->auth_model->add_pengunjung();
+
 		$this->load->view('user/template/header');
 		$this->load->view('user/dashboard', $data);
 		$this->load->view('user/template/footer');
