@@ -91,7 +91,7 @@
                                     <a class="nav-link" href="<?php echo site_url('benih_keluar/list/2') ?>">APBD</a>
                                 </nav>
                             </div>
-                            <div class="sb-sidenav-menu-heading">Laporan</div>
+                            <!-- <div class="sb-sidenav-menu-heading">Laporan</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts5" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Laporan Masuk
@@ -113,7 +113,7 @@
                                     <a class="nav-link" href="<?php echo site_url('laporan_keluar/pilih/1') ?>">APBN</a>
                                     <a class="nav-link" href="<?php echo site_url('laporan_keluar/pilih/2') ?>">APBD</a>
                                 </nav>
-                            </div>
+                            </div> -->
                             <?php if($this->session->userdata('level') == "admin"): ?>
                             <div class="sb-sidenav-menu-heading">User Manager</div>
                             <a class="nav-link" href="<?php echo site_url('auth/list_user') ?>">
