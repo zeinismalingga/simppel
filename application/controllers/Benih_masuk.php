@@ -39,7 +39,11 @@ class Benih_masuk extends MY_Controller {
 			
 			$this->benih_masuk_model->create();
 			$this->benih_model->update_stok($id_benih, $stok);
-			redirect('benih_masuk/list');
+			if($benih['id_anggaran'] == '1'){
+				redirect('benih_masuk/list/1');
+			}else{
+				redirect('benih_masuk/list/2');
+			}
 		}
 		
 	}

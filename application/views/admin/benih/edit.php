@@ -53,7 +53,7 @@
                                 <input type="text" name="harga" class="form-control" value="<?php echo $benih['harga'] ?>" required>                            
                             </div>
                             <div class="form-group">
-                                <label>Deskripsi</label>
+                                <label>Keterangan</label>
                                 <textarea class="form-control" name="deskripsi"><?php echo $benih['deskripsi'] ?></textarea>
                             </div>
                             <div class="form-group">

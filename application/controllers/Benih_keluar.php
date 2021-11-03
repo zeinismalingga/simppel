@@ -37,7 +37,12 @@ class Benih_keluar extends MY_Controller {
 			
 			$this->benih_keluar_model->create();
 			$this->benih_model->update_stok($id_benih, $stok);
-			redirect('benih_keluar/list');
+			if($benih['id_anggaran'] == '1'){
+				redirect('benih_keluar/list/1');
+			}else{
+				redirect('benih_keluar/list/2');
+			}
+			
 		}
 		
 	}
