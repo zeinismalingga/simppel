@@ -50,6 +50,7 @@
                                     <option value="2">Mati</option>
                                     <option value="3">Bantuan</option>
                                     <option value="4">Kawasan</option>
+                                    <option value="5">Konsumsi</option>
                                 </select>                            
                             </div>
                             <button type="submit" class="btn btn-primary float-right">Tambah</button>

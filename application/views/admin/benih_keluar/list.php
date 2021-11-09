@@ -68,6 +68,9 @@
                                         case '4':
                                             $jenis_keluar = 'Kawasan';
                                             break;
+                                        case '5':
+                                            $jenis_keluar = 'Konsumsi';
+                                            break;
                                     } 
                                 ?>
                                 <td><?php echo $jenis_keluar ?></td>

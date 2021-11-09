@@ -59,6 +59,9 @@
                                             case '4':
                                                 $jenis_keluar = 'Kawasan';
                                                 break;
+                                            case '5':
+                                                $jenis_keluar = 'Konsumsi';
+                                                break;
                                         } 
                                     ?>
                                     <option value="<?= $benih_keluar['jenis_keluar'] ?>" selected><?= $jenis_keluar ?></option>
@@ -66,6 +69,7 @@
                                     <option value="2">Mati</option>
                                     <option value="3">Bantuan</option>
                                     <option value="4">Kawasan</option>
+                                    <option value="5">Konsumsi</option>
                                 </select>                            
                             </div>
                             <button type="submit" class="btn btn-primary float-right">Edit</button>
